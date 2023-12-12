@@ -4,44 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello!!!</title>
+    <style>
+    /* add css here */
+
+    /* referencing through tag type */
+    table {
+        background-color:rgb(194, 138, 246);
+        color: white;
+    }
+
+    /* using id selector */
+    #fav-color {
+        font-size: 24px;
+        color: orange;
+    }
+
+    /* using class to select */
+    .questions {
+        color: green;
+
+    }
+
+    /* using div to select(same as class selector) */
+    .div1{
+        background-color: rgb(155, 235, 208);
+    }
+
+    .div2{
+        background-color: rgb(234, 194, 201);
+    }
+    
+    </style>
 </head>
 <body>
     <!-- header tags -->
     <h1>HELLO KITTY PARTY   </h1>
     <h2>Intro to hello kitty:</h2>
 
-    <!-- paragraph tags -->
-    <p><b><u><em>Reasons we love HELLO KITTY 😍:</em></u></b> </p>
+    <!-- div tag 1 -->
+    <div class="div1">
+        <!-- paragraph tags -->
+        <p><b><u><em>Reasons we love HELLO KITTY 😍:</em></u></b> </p>
+    
+        <!-- ordered lists -->
+        <ol type="a">
+            <li>shes cute</li>
+            <li>shes a cat</li>
+            <li>she has a ribbon</li>
+        </ol>
+    </div>
 
-    <!-- ordered lists -->
-    <ol type="a">
-        <li>shes cute</li>
-        <li>shes a cat</li>
-        <li>she has a ribbon</li>
-    </ol>
+    <!-- div tag 2 -->
+    <div class="div2">
+        <p><em><b><u>List of hello kitty friends:</u></b></em></p>
+    
+        <!-- unordered list -->
+        <ul>
+            <li>pocchaco</li>
+            <li>my melody</li>
+    
+            <li>kuromi</li>
+            <!-- nested list -->
+                <ol>
+                    <li>black cat</li>
+                    <li> best friends with my melody</li>
+                    <li>likes purple</li>
+                </ol>
+    
+            <li>kerropi</li>
+                <ol>
+                    <li>green frog</li>
+                    <li>sanrio</li>
+                    <li> friends with kuromi too!</li>
+                </ol>
+        </ul>
+    </div>
 
-    <p><em><b><u>List of hello kitty friends:</u></b></em></p>
-
-    <!-- unordered list -->
-    <ul>
-        <li>pocchaco</li>
-        <li>my melody</li>
-
-        <li>kuromi</li>
-        <!-- nested list -->
-            <ol>
-                <li>black cat</li>
-                <li> best friends with my melody</li>
-                <li>likes purple</li>
-            </ol>
-
-        <li>kerropi</li>
-            <ol>
-                <li>green frog</li>
-                <li>sanrio</li>
-                <li> friends with kuromi too!</li>
-            </ol>
-    </ul>
 
     <!-- adding in a line -->
     <hr>
@@ -80,7 +118,7 @@
             <td>black cat</td>
             <td>rabbit</td>
         </tr>
-        <tr>
+        <tr id="fav-color">
             <th>FAV COLOR</th>
             <td>red</td>
             <td>yellow</td>
@@ -89,17 +127,18 @@
         </tr>
     </table>
     <hr>
-    <h1>new sanrio character</h1>
+    <h1 style="color:rgb(180, 99, 255)">New sanrio character</h1>
+    <img src="pompom.png" alt="" height="100px">
     <form action="#" method="GET">
         <!-- radio button -->
-        <h3>What is your gender?</h3>
+        <p class="questions">What is their gender?</p>
         <input type="radio" id="male" name="gender" value ="male">
         <label for="male">MALE</label>
 
         <input type="radio" id="female" name="gender" value="female">
         <label for="female">FEMALE</label>
 
-        <h3>WHAT IS YOUR FAV COLOR</h3>
+        <p class="questions">WHAT IS THEIR FAV COLOR</p>
         <input type="checkbox" id="ans1" name="favColor" value="pink">
         <label for="ans1">pink</label>
 
@@ -114,13 +153,13 @@
 
         <!-- input text -->
         <br><br>
-        <label for="fullname">Enter your name:</label>
+        <label for="fullname" class="questions">Enter the character's name:</label>
         <br>
         <input type="text" name="fullname" id="fullname">
 
         <!-- big text area -->
         <br><br>
-        <label>Tell me about yourself:</label>
+        <label class="questions">Tell me about this character:</label>
         <br>
         <textarea name="" id="" cols="30" rows="10"></textarea>
 
@@ -129,4 +168,5 @@
         <input type="submit" value="add!"></input>
     </form>
 </body>
+
 </html>
