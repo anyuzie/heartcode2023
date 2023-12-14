@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="kitty-icon.jpg" type="image/x-icon">
+    <style>
+        .navbar {
+            background-color: rgb(224, 164, 204);
+        }
+        .jumbotron { 
+            background: url("kitty-jumbo.jpg") no-repeat center center; 
+            background-size: cover;  
+            height: 600px; 
+            display: flex; 
+            align-items: center; 
+            margin-bottom: 1em; 
+        }
+    </style>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+    <!-- lottie files -->
+    <center>
+        <dotlottie-player src="https://lottie.host/d7b9ab2e-9e71-4576-aedd-4d8cd459e118/TWxXmY2I3G.json" background="pink" speed="10" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+    </center>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="nav d-flex navbar">
+        <a class="nav-link" href="testing.html">home</a>
+        <a class="nav-link" href="create.html">create</a>
+        <a class="nav-link" href="sanrio.html">sanrios!</a>
+        <div class="ms-auto">
+            <img class="" width="50" src="kitty-icon.jpg">
+        </div>
+    </nav>
+    <!-- header tags -->
+    <!-- Add the Jumbotron --> 
+    <div class="jumbotron jumbotron-fluid" id="jumbotron"> 
+        <div class="container"> 
+          <h1 class="display-3 fw-bolder text-center bg-danger-subtle text-white">hello kitty party!</h1> 
+        </div> 
+    </div>
+    
+    <div>
+        <h3 class="text-center">Intro to hello kitty:</h3>
+    </div>
+
+    <div class="hstack gap-4 justify-content-center">
+        <div class="bg-primary-subtle">
+            <!-- paragraph tags -->
+            <p><b><u><em>Reasons we love HELLO KITTY 😍:</em></u></b> </p>
+        
+            <!-- ordered lists -->
+            <ol type="a">
+                <!-- bolding the full line -->
+                <li class="fw-bold">shes cute</li>
+                <!-- bold specific words -->
+                <li>shes a <span class="fw-bold">cat</span></li>
+                <li>she has a <span class="fw-bold">ribbon</span></li>
+            </ol>
+        </div>
+    
+        <!-- div tag 2 -->
+        <div class="bg-warning-subtle">
+            <p><em><b><u>List of hello kitty friends:</u></b></em></p>
+        
+            <!-- unordered list -->
+            <ul>
+                <li>pocchaco</li>
+                <li>my melody</li>
+        
+                <li>kuromi</li>
+                <!-- nested list -->
+                    <ol>
+                        <li>black cat</li>
+                        <li> best friends with my melody</li>
+                        <li>likes purple</li>
+                    </ol>
+        
+                <li>kerropi</li>
+                    <ol>
+                        <li>green frog</li>
+                        <li>sanrio</li>
+                        <li> friends with kuromi too!</li>
+                    </ol>
+            </ul>
+        </div>
+
+    </div>
+    <!-- div tag 1 -->
+
+
+    <!-- adding in a line -->
+    <hr>
+
+    <h2><u>Picture of hello kitty:</u></h2>
+
+    <!-- adding in an image -->
+    <img class="img1" src="hellokitty.jpg" alt="">
+
+    <!-- adding in my video -->
+    <p>watch more of hello kitty <a href="https://youtu.be/hjpiBi0L8Qs">here!</a></p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/hjpiBi0L8Qs?si=vM0zo-fWABr43zH4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+    <hr>
+    <h2><u><center>Section 2:</center></u></h2>
+    <!-- adding in a table -->
+    <table class="table table-warning table-striped">
+
+        <!-- Using colspan -->
+        <tr>
+            <th colspan="6"> HELLO KITTY AND FRIENDS INFO</th>
+        </tr>
+
+        <!-- using rowspan -->
+        <tr>
+            <th rowspan="3">SANRIO</th>
+            <th>NAME</th>
+            <td><em>Hello kitty </em></td>
+            <td><em>pompompurin </em></td>
+            <td><em>kuromi </em></td>
+            <td><em>my melody </em></td>
+        </tr>
+        <tr>
+            <th>TYPE OF ANIMAL</th>
+            <td>cat</td>
+            <td>dog</td>
+            <td>black cat</td>
+            <td>rabbit</td>
+        </tr>
+        <tr>
+            <th>FAV COLOR</th>
+            <td>red</td>
+            <td>yellow</td>
+            <td>black</td>
+            <td>pink</td>
+        </tr>
+    </table>
+    <hr>
+    <div>
+    
+        <br><br>
+        <!-- old submit button -->
+        <!-- <input type="submit" value="add!"></input> -->
+
+        <!-- Bootstrap buttons  -->
+        <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+            <button type="button" class="btn btn-danger">left!</button>
+            <button type="button" class="btn btn-warning">middle!</button>
+            <button type="button" class="btn btn-success">right!</button>
+        </div>
+    </form>
+    </div>
+    
+    <br>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+
+</html>
